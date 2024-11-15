@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Pemesanan Paket - pelah | Tour & Travel</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <!-- Navigasi -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">pelah | Tour & Travel</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#deskripsi">Deskripsi Paket</a></li>
+        <li><a href="#customize">Customize Paket</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Galeri Paket Wisata -->
+  <section id="galeri">
+    <h2>Galeri Paket Wisata</h2>
+    <div class="gallery">
+      <img src="https://picsum.photos/id/815/400/400" alt="Two hands creating a heart and showing the sun">
+      <img src="https://picsum.photos/id/872/400/400" alt="The mountain">
+      <img src="https://picsum.photos/id/603/400/400" alt="A river">
+      <img src="https://picsum.photos/id/823/400/400" alt="A woman with a camera">
+    </div>
+  </section>
+
+  <!-- Deskripsi Paket -->
+  <section id="deskripsi">
+    <h2>Deskripsi Paket Wisata</h2>
+    <p>Nikmati paket wisata terbaik di Bukittinggi dengan destinasi menarik seperti offroad di Ngarai Sianok, panorama Tabek Patah, dan pengalaman wisata budaya lainnya.</p>
+  </section>
+
+  <!-- Customize Paket -->
+  <section id="customize">
+    <h2>Customize Paket Wisata Anda</h2>
+    
+    <!-- Form Pemesanan -->
+    <form id="bookingForm">
+      <!-- Nama Pemesan -->
+      <label for="userName">Nama Pemesan:</label>
+      <input type="text" id="userName" name="userName" required>
+
+      <!-- Tanggal Perjalanan -->
+      <label for="startDate">Tanggal Mulai:</label>
+      <input type="date" id="startDate" name="startDate" required>
+
+      <label for="endDate">Tanggal Berakhir:</label>
+      <input type="date" id="endDate" name="endDate" required>
+
+      <!-- Checkbox Destinasi -->
+      <fieldset>
+        <legend>Destinasi Wisata</legend>
+        <label><input type="checkbox" name="wisata" value="Offroad Ngarai Sianok"> Offroad Ngarai Sianok</label>
+        <label><input type="checkbox" name="wisata" value="Panorama Tabek Patah"> Panorama Tabek Patah</label>
+        <label><input type="checkbox" name="wisata" value="Kawasan Jam Gadang"> Kawasan Jam Gadang</label>
+        <label><input type="checkbox" name="wisata" value="Museum Rumah Adat Baanjuang"> Museum Rumah Adat Baanjuang</label>
+        <label><input type="checkbox" name="wisata" value="Ngarai Sianok"> Ngarai Sianok</label>
+        <label><input type="checkbox" name="wisata" value="Lobang Jepang"> Lobang Jepang</label>
+        <!-- Tambahkan lebih banyak destinasi sesuai keinginan -->
+      </fieldset>
+
+      <!-- Checkbox Pilihan Hotel -->
+      <fieldset>
+        <legend>Pilihan Hotel</legend>
+        <label><input type="checkbox" name="hotel" value="Hotel Rocky Bukittinggi"> Hotel Rocky Bukittinggi</label>
+        <label><input type="checkbox" name="hotel" value="Novotel Bukittinggi"> Novotel Bukittinggi</label>
+        <label><input type="checkbox" name="hotel" value="Grand Malindo"> Grand Malindo</label>
+        <label><input type="checkbox" name="hotel" value="Hotel Ambacang"> Hotel Ambacang</label>
+        <!-- Tambahkan lebih banyak hotel sesuai kebutuhan -->
+      </fieldset>
+
+      <!-- Preview Box untuk Konfirmasi -->
+      <div class="calculation-box">
+        <h3>Preview Pemesanan</h3>
+        <p id="previewItems">Item yang dipilih akan ditampilkan di sini</p>
+        <button type="button" onclick="generateOrder()">Pesan Sekarang</button>
+      </div>
+    </form>
+  </section>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
