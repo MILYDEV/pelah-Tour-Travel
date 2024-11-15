@@ -118,11 +118,11 @@ function generateOrder() {
 
   const ticketNumber = generateTicketNumber();
   const itemList = selectedItems.join(", ");
-  const message = `Saya ${userName} ingin melakukan perjalanan pada ${startDate} sampai ${endDate}, Memesan paket wisata ${itemList}. Kami akan menginap di ${selectedHotel}.\n\nNomor Pemesanan: ${ticketNumber}\n\nTerimakasih.`;
+  const message = `Saya *${userName}* ingin melakukan perjalanan pada *${startDate}* sampai *${endDate}*, Memesan paket wisata *${itemList}*. Kami akan menginap di *${selectedHotel}*.\n\nNomor Pemesanan: *${ticketNumber}*\n\nTerimakasih.`;
 
   // Encode pesan untuk URL
   const encodedMessage = encodeURIComponent(message);
-  const whatsappURL = `https://api.whatsapp.com/send?phone=+6285364538446&text=${encodedMessage}`;
+  const whatsappURL = `https://api.whatsapp.com/send?phone=+6285363796901&text=${encodedMessage}`;
 
   // Buka WhatsApp
   window.open(whatsappURL, "_blank");
